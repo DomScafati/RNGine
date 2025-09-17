@@ -1,0 +1,17 @@
+//
+//  RNGine_Watch_AppTests.swift
+//  RNGine Watch AppTests
+//
+//  Created by Dom S on 9/17/25.
+//
+
+import Testing
+@testable import RNGine_Watch_App
+
+struct RNGine_Watch_AppTests {
+
+    @Test func example() async throws {
+        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    }
+
+}

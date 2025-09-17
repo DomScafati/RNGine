@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2EF32322E7B4EEC00679F63 /* RNGine Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2EF32312E7B4EEC00679F63 /* RNGine Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2EF321C2E7B4EEC00679F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2EF32062E7B4EEA00679F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2EF320D2E7B4EEA00679F63;
+			remoteInfo = RNGine;
+		};
+		F2EF32262E7B4EEC00679F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2EF32062E7B4EEA00679F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2EF320D2E7B4EEA00679F63;
+			remoteInfo = RNGine;
+		};
+		F2EF32332E7B4EEC00679F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2EF32062E7B4EEA00679F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2EF32302E7B4EEC00679F63;
+			remoteInfo = "RNGine Watch App";
+		};
+		F2EF32412E7B4EED00679F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2EF32062E7B4EEA00679F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2EF32302E7B4EEC00679F63;
+			remoteInfo = "RNGine Watch App";
+		};
+		F2EF324B2E7B4EED00679F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2EF32062E7B4EEA00679F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2EF32302E7B4EEC00679F63;
+			remoteInfo = "RNGine Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2EF32572E7B4EED00679F63 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F2EF32322E7B4EEC00679F63 /* RNGine Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F2EF320E2E7B4EEA00679F63 /* RNGine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNGine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF321B2E7B4EEC00679F63 /* RNGineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNGineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF32252E7B4EEC00679F63 /* RNGineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNGineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF32312E7B4EEC00679F63 /* RNGine Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNGine Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF32402E7B4EED00679F63 /* RNGine Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNGine Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF324A2E7B4EED00679F63 /* RNGine Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNGine Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F2EF32102E7B4EEA00679F63 /* RNGine */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RNGine;
+			sourceTree = "<group>";
+		};
+		F2EF321E2E7B4EEC00679F63 /* RNGineTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RNGineTests;
+			sourceTree = "<group>";
+		};
+		F2EF32282E7B4EEC00679F63 /* RNGineUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RNGineUITests;
+			sourceTree = "<group>";
+		};
+		F2EF32352E7B4EEC00679F63 /* RNGine Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RNGine Watch App";
+			sourceTree = "<group>";
+		};
+		F2EF32432E7B4EED00679F63 /* RNGine Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RNGine Watch AppTests";
+			sourceTree = "<group>";
+		};
+		F2EF324D2E7B4EED00679F63 /* RNGine Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RNGine Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2EF320B2E7B4EEA00679F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32182E7B4EEC00679F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32222E7B4EEC00679F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF322E2E7B4EEC00679F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF323D2E7B4EED00679F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32472E7B4EED00679F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2EF32052E7B4EEA00679F63 = {
+			isa = PBXGroup;
+			children = (
+				F2EF32102E7B4EEA00679F63 /* RNGine */,
+				F2EF321E2E7B4EEC00679F63 /* RNGineTests */,
+				F2EF32282E7B4EEC00679F63 /* RNGineUITests */,
+				F2EF32352E7B4EEC00679F63 /* RNGine Watch App */,
+				F2EF32432E7B4EED00679F63 /* RNGine Watch AppTests */,
+				F2EF324D2E7B4EED00679F63 /* RNGine Watch AppUITests */,
+				F2EF320F2E7B4EEA00679F63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2EF320F2E7B4EEA00679F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2EF320E2E7B4EEA00679F63 /* RNGine.app */,
+				F2EF321B2E7B4EEC00679F63 /* RNGineTests.xctest */,
+				F2EF32252E7B4EEC00679F63 /* RNGineUITests.xctest */,
+				F2EF32312E7B4EEC00679F63 /* RNGine Watch App.app */,
+				F2EF32402E7B4EED00679F63 /* RNGine Watch AppTests.xctest */,
+				F2EF324A2E7B4EED00679F63 /* RNGine Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2EF320D2E7B4EEA00679F63 /* RNGine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF32582E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine" */;
+			buildPhases = (
+				F2EF320A2E7B4EEA00679F63 /* Sources */,
+				F2EF320B2E7B4EEA00679F63 /* Frameworks */,
+				F2EF320C2E7B4EEA00679F63 /* Resources */,
+				F2EF32572E7B4EED00679F63 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2EF32342E7B4EEC00679F63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F2EF32102E7B4EEA00679F63 /* RNGine */,
+			);
+			name = RNGine;
+			packageProductDependencies = (
+			);
+			productName = RNGine;
+			productReference = F2EF320E2E7B4EEA00679F63 /* RNGine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2EF321A2E7B4EEC00679F63 /* RNGineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF325B2E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGineTests" */;
+			buildPhases = (
+				F2EF32172E7B4EEC00679F63 /* Sources */,
+				F2EF32182E7B4EEC00679F63 /* Frameworks */,
+				F2EF32192E7B4EEC00679F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2EF321D2E7B4EEC00679F63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F2EF321E2E7B4EEC00679F63 /* RNGineTests */,
+			);
+			name = RNGineTests;
+			packageProductDependencies = (
+			);
+			productName = RNGineTests;
+			productReference = F2EF321B2E7B4EEC00679F63 /* RNGineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2EF32242E7B4EEC00679F63 /* RNGineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF325E2E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGineUITests" */;
+			buildPhases = (
+				F2EF32212E7B4EEC00679F63 /* Sources */,
+				F2EF32222E7B4EEC00679F63 /* Frameworks */,
+				F2EF32232E7B4EEC00679F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2EF32272E7B4EEC00679F63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F2EF32282E7B4EEC00679F63 /* RNGineUITests */,
+			);
+			name = RNGineUITests;
+			packageProductDependencies = (
+			);
+			productName = RNGineUITests;
+			productReference = F2EF32252E7B4EEC00679F63 /* RNGineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F2EF32302E7B4EEC00679F63 /* RNGine Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF32542E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine Watch App" */;
+			buildPhases = (
+				F2EF322D2E7B4EEC00679F63 /* Sources */,
+				F2EF322E2E7B4EEC00679F63 /* Frameworks */,
+				F2EF322F2E7B4EEC00679F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F2EF32352E7B4EEC00679F63 /* RNGine Watch App */,
+			);
+			name = "RNGine Watch App";
+			packageProductDependencies = (
+			);
+			productName = "RNGine Watch App";
+			productReference = F2EF32312E7B4EEC00679F63 /* RNGine Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2EF323F2E7B4EED00679F63 /* RNGine Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF32612E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine Watch AppTests" */;
+			buildPhases = (
+				F2EF323C2E7B4EED00679F63 /* Sources */,
+				F2EF323D2E7B4EED00679F63 /* Frameworks */,
+				F2EF323E2E7B4EED00679F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2EF32422E7B4EED00679F63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F2EF32432E7B4EED00679F63 /* RNGine Watch AppTests */,
+			);
+			name = "RNGine Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "RNGine Watch AppTests";
+			productReference = F2EF32402E7B4EED00679F63 /* RNGine Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2EF32492E7B4EED00679F63 /* RNGine Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EF32642E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine Watch AppUITests" */;
+			buildPhases = (
+				F2EF32462E7B4EED00679F63 /* Sources */,
+				F2EF32472E7B4EED00679F63 /* Frameworks */,
+				F2EF32482E7B4EED00679F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2EF324C2E7B4EED00679F63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F2EF324D2E7B4EED00679F63 /* RNGine Watch AppUITests */,
+			);
+			name = "RNGine Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "RNGine Watch AppUITests";
+			productReference = F2EF324A2E7B4EED00679F63 /* RNGine Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2EF32062E7B4EEA00679F63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					F2EF320D2E7B4EEA00679F63 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					F2EF321A2E7B4EEC00679F63 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = F2EF320D2E7B4EEA00679F63;
+					};
+					F2EF32242E7B4EEC00679F63 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = F2EF320D2E7B4EEA00679F63;
+					};
+					F2EF32302E7B4EEC00679F63 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					F2EF323F2E7B4EED00679F63 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = F2EF32302E7B4EEC00679F63;
+					};
+					F2EF32492E7B4EED00679F63 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = F2EF32302E7B4EEC00679F63;
+					};
+				};
+			};
+			buildConfigurationList = F2EF32092E7B4EEA00679F63 /* Build configuration list for PBXProject "RNGine" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2EF32052E7B4EEA00679F63;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F2EF320F2E7B4EEA00679F63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2EF320D2E7B4EEA00679F63 /* RNGine */,
+				F2EF321A2E7B4EEC00679F63 /* RNGineTests */,
+				F2EF32242E7B4EEC00679F63 /* RNGineUITests */,
+				F2EF32302E7B4EEC00679F63 /* RNGine Watch App */,
+				F2EF323F2E7B4EED00679F63 /* RNGine Watch AppTests */,
+				F2EF32492E7B4EED00679F63 /* RNGine Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2EF320C2E7B4EEA00679F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32192E7B4EEC00679F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32232E7B4EEC00679F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF322F2E7B4EEC00679F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF323E2E7B4EED00679F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32482E7B4EED00679F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2EF320A2E7B4EEA00679F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32172E7B4EEC00679F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32212E7B4EEC00679F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF322D2E7B4EEC00679F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF323C2E7B4EED00679F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2EF32462E7B4EED00679F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2EF321D2E7B4EEC00679F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2EF320D2E7B4EEA00679F63 /* RNGine */;
+			targetProxy = F2EF321C2E7B4EEC00679F63 /* PBXContainerItemProxy */;
+		};
+		F2EF32272E7B4EEC00679F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2EF320D2E7B4EEA00679F63 /* RNGine */;
+			targetProxy = F2EF32262E7B4EEC00679F63 /* PBXContainerItemProxy */;
+		};
+		F2EF32342E7B4EEC00679F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2EF32302E7B4EEC00679F63 /* RNGine Watch App */;
+			targetProxy = F2EF32332E7B4EEC00679F63 /* PBXContainerItemProxy */;
+		};
+		F2EF32422E7B4EED00679F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2EF32302E7B4EEC00679F63 /* RNGine Watch App */;
+			targetProxy = F2EF32412E7B4EED00679F63 /* PBXContainerItemProxy */;
+		};
+		F2EF324C2E7B4EED00679F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2EF32302E7B4EEC00679F63 /* RNGine Watch App */;
+			targetProxy = F2EF324B2E7B4EED00679F63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2EF32522E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2EF32532E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F2EF32552E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGine;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = DomScafati.RNGine;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGine.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		F2EF32562E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGine;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = DomScafati.RNGine;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGine.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		F2EF32592E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGine;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2EF325A2E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGine;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2EF325C2E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNGine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RNGine";
+			};
+			name = Debug;
+		};
+		F2EF325D2E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNGine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RNGine";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2EF325F2E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RNGine;
+			};
+			name = Debug;
+		};
+		F2EF32602E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DomScafati.RNGineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RNGine;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2EF32622E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DomScafati.RNGine-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNGine Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RNGine Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		F2EF32632E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DomScafati.RNGine-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNGine Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RNGine Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		F2EF32652E7B4EED00679F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DomScafati.RNGine-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RNGine Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		F2EF32662E7B4EED00679F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQ8749W3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DomScafati.RNGine-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RNGine Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2EF32092E7B4EEA00679F63 /* Build configuration list for PBXProject "RNGine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF32522E7B4EED00679F63 /* Debug */,
+				F2EF32532E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF32542E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF32552E7B4EED00679F63 /* Debug */,
+				F2EF32562E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF32582E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF32592E7B4EED00679F63 /* Debug */,
+				F2EF325A2E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF325B2E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF325C2E7B4EED00679F63 /* Debug */,
+				F2EF325D2E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF325E2E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF325F2E7B4EED00679F63 /* Debug */,
+				F2EF32602E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF32612E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF32622E7B4EED00679F63 /* Debug */,
+				F2EF32632E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EF32642E7B4EED00679F63 /* Build configuration list for PBXNativeTarget "RNGine Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EF32652E7B4EED00679F63 /* Debug */,
+				F2EF32662E7B4EED00679F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2EF32062E7B4EEA00679F63 /* Project object */;
+}
