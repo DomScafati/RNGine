@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F25670F92E81B62A009E6A9B /* ModelPaints in Frameworks */ = {isa = PBXBuildFile; productRef = F25670F82E81B62A009E6A9B /* ModelPaints */; };
 		F2EF32322E7B4EEC00679F63 /* RNGine Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F2EF32312E7B4EEC00679F63 /* RNGine Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25670F92E81B62A009E6A9B /* ModelPaints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F25670F72E81B62A009E6A9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2EF32052E7B4EEA00679F63 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +168,7 @@
 				F2EF32352E7B4EEC00679F63 /* RNGine Watch App */,
 				F2EF32432E7B4EED00679F63 /* RNGine Watch AppTests */,
 				F2EF324D2E7B4EED00679F63 /* RNGine Watch AppUITests */,
+				F25670F72E81B62A009E6A9B /* Frameworks */,
 				F2EF320F2E7B4EEA00679F63 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -198,6 +208,7 @@
 			);
 			name = RNGine;
 			packageProductDependencies = (
+				F25670F82E81B62A009E6A9B /* ModelPaints */,
 			);
 			productName = RNGine;
 			productReference = F2EF320E2E7B4EEA00679F63 /* RNGine.app */;
@@ -360,6 +371,9 @@
 			);
 			mainGroup = F2EF32052E7B4EEA00679F63;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F2EF32672E7B502B00679F63 /* XCRemoteSwiftPackageReference "ModelPaints" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F2EF320F2E7B4EEA00679F63 /* Products */;
 			projectDirPath = "";
@@ -959,6 +973,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2EF32672E7B502B00679F63 /* XCRemoteSwiftPackageReference "ModelPaints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DomScafati/ModelPaints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F25670F82E81B62A009E6A9B /* ModelPaints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2EF32672E7B502B00679F63 /* XCRemoteSwiftPackageReference "ModelPaints" */;
+			productName = ModelPaints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2EF32062E7B4EEA00679F63 /* Project object */;
 }

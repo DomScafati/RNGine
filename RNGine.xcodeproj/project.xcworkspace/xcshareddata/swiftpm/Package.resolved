@@ -1,0 +1,15 @@
+{
+  "originHash" : "4ceacd6bc7aa939db0c9676f213ee4bf60413edd057c2772e0f6e8557cefa944",
+  "pins" : [
+    {
+      "identity" : "modelpaints",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DomScafati/ModelPaints.git",
+      "state" : {
+        "revision" : "c9c819488df903056b03470fab6f31615fb15a89",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}
