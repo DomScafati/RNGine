@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RNGine_Watch_AppApp: App {
+    @State var viewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WatchHomeView()
         }
+        .environmentObject(viewModel)
     }
 }

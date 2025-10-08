@@ -10,18 +10,18 @@ On iPhone, you can choose what to roll and see history.
 ## 🚀 Roadmap / Checklist
 
 ### Phase 1: Core Features (MVP)
-- [ ] **Project Setup**
+- [x] **Project Setup**
   - [x] Create a new Swift project (iOS + watchOS targets).
-  - [ ] Set up basic app icon and placeholder UI.
+  - [x] Set up basic app icon and placeholder UI.
 
-- [ ] **Dice Rolling**
+- [x] **Dice Rolling**
   - [x] Implement dice roll function (d20, d6, etc.).
   - [x] Display result in UI.
-  - [ ] Add simple animation/feedback (e.g., haptic feedback, roll sound).
+  - [x] Add simple animation/feedback (e.g., haptic feedback, roll sound).
 
-- [ ] **Coin Flip**
+- [x] **Coin Flip**
   - [x] Implement coin flip function.
-  - [ ] Display heads/tails with icon or text.
+  - [x] Display heads/tails with icon or text.
 
 - [ ] **Apple Watch App**
   - [ ] Create minimal Watch app target.
@@ -32,7 +32,7 @@ On iPhone, you can choose what to roll and see history.
 
 ### Phase 2: Enhancements
 - [ ] **Custom Dice Selection**
-  - [ ] On iPhone: choose d4, d6, d8, d10, d12, d20, d100.
+  - [x] On iPhone: choose d4, d6, d8, d10, d12, d20, d100.
   - [ ] Save last selection for quick access.
 
 - [ ] **History**

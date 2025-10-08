@@ -5,11 +5,10 @@
 //  Created by Dom S on 9/21/25.
 //
 
-import SwiftUICore
+import Foundation
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
-
     
     func rng(dice: Dice) -> String {
         let rangeLower: Int = 1

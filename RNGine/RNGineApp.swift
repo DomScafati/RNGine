@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RNGineApp: App {
+    @StateObject var homeViewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            iOSHomeView()
+                .environmentObject(homeViewModel)
         }
     }
 }
