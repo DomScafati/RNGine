@@ -37,11 +37,14 @@ struct iOSHomeView: View {
             .adaptiveSheet(isPresented: $isSheetPresented) {
                 LazyVGrid(columns: columns, spacing: 50) {
                     ForEach(Dice.allCases, id: \.self) { die in
-                        PreviewDiceView(die: die)
-                            .onTapGesture {
-                                selectedDie = die
-                                randomNum = ""
-                            }
+                        PreviewDiceView(
+                            die: die,
+                            isSelected: selectedDie == die
+                        )
+                        .onTapGesture {
+                            selectedDie = die
+                            randomNum = ""
+                        }
                     }
                 }
                 .padding(.top, 50)
@@ -58,7 +61,8 @@ struct PrimaryDieView: View {
     @State var shouldSpin: Bool = false
     @State var shouldShrink: Bool = false
     @State var mainDieSize: CGFloat = 200.0
-    
+    @State var shouldShowText: Bool = true
+    @State var isTapReady: Bool = true
     var body: some View {
         ZStack {
             Image(selectedDie.image)
@@ -66,23 +70,33 @@ struct PrimaryDieView: View {
                 .frame(width: mainDieSize, height: mainDieSize)
                 .rotationEffect(.degrees(shouldSpin ? 360 : 0))
             
-            Text("\(randomNum)")
-                .font(.largeTitle)
+            if shouldShowText {
+                Text("\(randomNum)")
+                    .font(.largeTitle)
+                    .transition(.scale)
+                    .animation(.easeInOut, value: shouldShowText)
+            }
         }
         .onTapGesture {
-            
-            withAnimation(.easeIn(duration: 0.3)) {
-                shouldSpin.toggle()
-                mainDieSize = 25
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                withAnimation(.easeOut(duration: 0.3)) {
-                    mainDieSize = 200
+            if isTapReady {
+                isTapReady.toggle()
+                
+                withAnimation(.easeIn(duration: 0.3)) {
+                    shouldSpin.toggle()
+                    shouldShowText.toggle()
+                    mainDieSize = 0
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    withAnimation(.easeOut(duration: 0.3)) {
+                        shouldShowText.toggle()
+                        mainDieSize = 200
+                    }
+                    
+                    randomNum = viewModel.rng(dice: selectedDie)
+                    isTapReady.toggle()
                 }
             }
-            
-            randomNum = viewModel.rng(dice: selectedDie)
         }
     }
 }
@@ -90,11 +104,18 @@ struct PrimaryDieView: View {
 
 struct PreviewDiceView: View {
     let die: Dice
+    let isSelected: Bool
     var body: some View {
         ZStack {
             Image(die.image)
                 .resizable()
                 .frame(width: 100, height: 100)
+                .overlay {
+                    Image(die.image)
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .shadow(color: Color.bugmansGlow, radius: isSelected ? 20 : 0)
+                }
             
             Text(
                 "\(die.rawValue)"

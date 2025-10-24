@@ -10,7 +10,12 @@ import SwiftUI
 struct WatchHomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
     @State var selectedDie: Dice = .coin
-    @State var randomNum: String = ""
+    @State var randomNum: String = "heads"
+    // Animation
+    @State var shouldSpin: Bool = false
+    @State var shouldShrink: Bool = false
+    @State var shouldShowText: Bool = true
+    @State var mainDieSize: CGFloat = 100
     
     var body: some View {
         VStack {
@@ -18,18 +23,38 @@ struct WatchHomeView: View {
             ZStack {
                 Image("\(selectedDie.image)")
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .frame(width: mainDieSize, height: mainDieSize)
+                    .padding()
+                    .rotationEffect( .degrees(shouldShowText ? 360 : 0))
                     .onTapGesture {
                         randomNum = viewModel.rng(dice: selectedDie)
+                        
+                        withAnimation(.easeIn(duration: 0.5)){
+                            mainDieSize = 0
+                            shouldShowText.toggle()
+                            shouldSpin.toggle()
+                        }
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                            withAnimation(.easeInOut(duration: 0.5)) {
+                                mainDieSize = 100
+                                shouldShowText.toggle()
+                                shouldSpin.toggle()
+                            }
+                        }
                     }
                 
-                Text(randomNum)
+                if shouldShowText {
+                    Text(randomNum)
+                        .transition(.opacity)
+                        .animation(.smooth, value: shouldShowText)
 
-            }
-            .padding()
-        }
-    }
-}
+                }
+                
+            }// ZStack
+        }// VStack
+    }// body
+}// WatchHomeView
 
 #Preview {
     WatchHomeView()
