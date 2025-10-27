@@ -9,7 +9,6 @@ import SwiftUI
 
 struct WatchHomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
-    @State var selectedDie: Die = .coin
     @State var randomNum: String = "heads"
     // Animation
     @State var shouldSpin: Bool = false
@@ -21,13 +20,13 @@ struct WatchHomeView: View {
         VStack {
             
             ZStack {
-                Image("\(selectedDie.image)")
+                Image("\(viewModel.currentDie.image)")
                     .resizable()
                     .frame(width: mainDieSize, height: mainDieSize)
                     .padding()
                     .rotationEffect( .degrees(shouldShowText ? 360 : 0))
                     .onTapGesture {
-                        randomNum = viewModel.rng(dice: selectedDie)
+                        randomNum = viewModel.rng()
                         
                         withAnimation(.easeIn(duration: 0.5)){
                             mainDieSize = 0

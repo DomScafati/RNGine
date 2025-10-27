@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  WatchDiceSelectionView.swift
 //  RNGine Watch App
 //
 //  Created by Dom S on 10/27/25.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct WatchDiceSelectionView: View {
+    @EnvironmentObject var viewModel: HomeViewModel
     let columns = [
         GridItem(.flexible())
     ]
@@ -15,7 +16,6 @@ struct SettingsView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(Die.allCases, id: \.self) { die in
-                    
                     ZStack {
                         Image(die.image)
                             .resizable()
@@ -24,7 +24,9 @@ struct SettingsView: View {
                         Text(die.rawValue)
                     }
                     .padding(.bottom, 30)
-
+                    .onTapGesture {
+                        viewModel.currentDie = die
+                    }
                 }// ForEach
             }// LazyVGrid
         }// ScrollView

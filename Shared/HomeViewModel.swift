@@ -9,14 +9,15 @@ import Foundation
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
+    @Published var currentDie: Die = .coin
     
-    func rng(dice: Die) -> String {
+    func rng() -> String {
         let rangeLower: Int = 1
         var rangeUpper: Int
         var randomNum: Int
         var result: String
         
-        switch dice {
+        switch self.currentDie {
         case .coin:
             rangeUpper = 2
         case .d4:
@@ -36,7 +37,7 @@ class HomeViewModel: ObservableObject {
         }
         
         randomNum = Int.random(in: rangeLower...rangeUpper)
-        if dice == .coin {
+        if self.currentDie == .coin {
             if randomNum % 2 == 0 {
                 result = "Tails"
             } else {

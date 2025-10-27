@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F25670F92E81B62A009E6A9B /* ModelPaints in Frameworks */ = {isa = PBXBuildFile; productRef = F25670F82E81B62A009E6A9B /* ModelPaints */; };
-		F272A5C22EAFE7D6000BB766 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A5C12EAFE7D6000BB766 /* SettingsView.swift */; };
-		F272A5C32EAFE7D6000BB766 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A5C12EAFE7D6000BB766 /* SettingsView.swift */; };
 		F272A5CA2EAFEEDF000BB766 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A5C92EAFEEDF000BB766 /* Die.swift */; };
 		F272A5CB2EAFEEDF000BB766 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A5C92EAFEEDF000BB766 /* Die.swift */; };
 		F2821A8C2E96E29900784B93 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2821A822E96E29900784B93 /* HomeViewModel.swift */; };
@@ -75,7 +73,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F272A5C12EAFE7D6000BB766 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = "RNGine Watch App/SettingsView.swift"; sourceTree = "<group>"; };
 		F272A5C92EAFEEDF000BB766 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		F2821A822E96E29900784B93 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F2821A852E96E29900784B93 /* RNGineGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNGineGradientView.swift; sourceTree = "<group>"; };
@@ -201,7 +198,6 @@
 		F2EF32052E7B4EEA00679F63 = {
 			isa = PBXGroup;
 			children = (
-				F272A5C12EAFE7D6000BB766 /* SettingsView.swift */,
 				F2821AA22E96E69700784B93 /* Shared */,
 				F2EF32102E7B4EEA00679F63 /* RNGine */,
 				F2EF32352E7B4EEC00679F63 /* RNGine Watch App */,
@@ -480,7 +476,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F272A5C22EAFE7D6000BB766 /* SettingsView.swift in Sources */,
 				F272A5CB2EAFEEDF000BB766 /* Die.swift in Sources */,
 				F2821A8C2E96E29900784B93 /* HomeViewModel.swift in Sources */,
 				F2821A8E2E96E29900784B93 /* RNGineGradientView.swift in Sources */,
@@ -505,7 +500,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F272A5C32EAFE7D6000BB766 /* SettingsView.swift in Sources */,
 				F272A5CA2EAFEEDF000BB766 /* Die.swift in Sources */,
 				F2821AA32E96E6DD00784B93 /* RNGineGradientView.swift in Sources */,
 				F2821AA42E96E6E300784B93 /* HomeViewModel.swift in Sources */,

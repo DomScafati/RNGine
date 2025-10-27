@@ -9,8 +9,8 @@ import SwiftUI
 import ModelPaints
 
 struct iOSHomeView: View {
+    @EnvironmentObject var viewModel: HomeViewModel
     @State var randomNum: String = ""
-    @State var selectedDie: Die = .coin
     @State var isSheetPresented = false
     
     let columns = [
@@ -25,10 +25,7 @@ struct iOSHomeView: View {
                 
                 Spacer()
                 
-                PrimaryDieView(
-                    selectedDie: $selectedDie,
-                    randomNum: $randomNum
-                )
+                PrimaryDieView(randomNum: $randomNum)
                 
                 Spacer()
                 
@@ -37,12 +34,12 @@ struct iOSHomeView: View {
             .adaptiveSheet(isPresented: $isSheetPresented) {
                 LazyVGrid(columns: columns, spacing: 50) {
                     ForEach(Die.allCases, id: \.self) { die in
-                        PreviewDiceView(
+                        DiceSelectionView(
                             die: die,
-                            isSelected: selectedDie == die
+                            isSelected: viewModel.currentDie == die
                         )
                         .onTapGesture {
-                            selectedDie = die
+                            viewModel.currentDie = die
                             randomNum = ""
                         }
                     }
@@ -55,7 +52,6 @@ struct iOSHomeView: View {
 
 struct PrimaryDieView: View {
     @EnvironmentObject var viewModel: HomeViewModel
-    @Binding var selectedDie: Die
     @Binding var randomNum: String
     // Animation
     @State var shouldSpin: Bool = false
@@ -65,7 +61,7 @@ struct PrimaryDieView: View {
     @State var isTapReady: Bool = true
     var body: some View {
         ZStack {
-            Image(selectedDie.image)
+            Image(viewModel.currentDie.image)
                 .resizable()
                 .frame(width: mainDieSize, height: mainDieSize)
                 .rotationEffect(.degrees(shouldSpin ? 360 : 0))
@@ -93,7 +89,7 @@ struct PrimaryDieView: View {
                         mainDieSize = 200
                     }
                     
-                    randomNum = viewModel.rng(dice: selectedDie)
+                    randomNum = viewModel.rng()
                     isTapReady.toggle()
                 }
             }
@@ -102,7 +98,7 @@ struct PrimaryDieView: View {
 }
 
 
-struct PreviewDiceView: View {
+struct DiceSelectionView: View {
     let die: Die
     let isSelected: Bool
     var body: some View {
