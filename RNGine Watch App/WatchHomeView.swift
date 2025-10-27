@@ -9,13 +9,13 @@ import SwiftUI
 
 struct WatchHomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
-    @State var selectedDie: Dice = .coin
+    @State var selectedDie: Die = .coin
     @State var randomNum: String = "heads"
     // Animation
     @State var shouldSpin: Bool = false
     @State var shouldShrink: Bool = false
     @State var shouldShowText: Bool = true
-    @State var mainDieSize: CGFloat = 100
+    @State var mainDieSize: CGFloat = 120
     
     var body: some View {
         VStack {
@@ -37,7 +37,7 @@ struct WatchHomeView: View {
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                             withAnimation(.easeInOut(duration: 0.5)) {
-                                mainDieSize = 100
+                                mainDieSize = 120
                                 shouldShowText.toggle()
                                 shouldSpin.toggle()
                             }

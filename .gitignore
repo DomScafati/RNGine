@@ -9,3 +9,5 @@ build/
 # Swift Package Manager
 .swiftpm/
 .build/
+
+*.plist

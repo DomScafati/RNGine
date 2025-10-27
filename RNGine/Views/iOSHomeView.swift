@@ -10,7 +10,7 @@ import ModelPaints
 
 struct iOSHomeView: View {
     @State var randomNum: String = ""
-    @State var selectedDie: Dice = .coin
+    @State var selectedDie: Die = .coin
     @State var isSheetPresented = false
     
     let columns = [
@@ -36,7 +36,7 @@ struct iOSHomeView: View {
             .padding()
             .adaptiveSheet(isPresented: $isSheetPresented) {
                 LazyVGrid(columns: columns, spacing: 50) {
-                    ForEach(Dice.allCases, id: \.self) { die in
+                    ForEach(Die.allCases, id: \.self) { die in
                         PreviewDiceView(
                             die: die,
                             isSelected: selectedDie == die
@@ -55,7 +55,7 @@ struct iOSHomeView: View {
 
 struct PrimaryDieView: View {
     @EnvironmentObject var viewModel: HomeViewModel
-    @Binding var selectedDie: Dice
+    @Binding var selectedDie: Die
     @Binding var randomNum: String
     // Animation
     @State var shouldSpin: Bool = false
@@ -103,7 +103,7 @@ struct PrimaryDieView: View {
 
 
 struct PreviewDiceView: View {
-    let die: Dice
+    let die: Die
     let isSelected: Bool
     var body: some View {
         ZStack {
