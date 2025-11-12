@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WatchHomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
-    @State var randomNum: String = "heads"
+    @State var randomNum: String = "Heads"
     // Animation
     @State var shouldSpin: Bool = false
     @State var shouldShrink: Bool = false
@@ -25,6 +25,9 @@ struct WatchHomeView: View {
                     .frame(width: mainDieSize, height: mainDieSize)
                     .padding()
                     .rotationEffect( .degrees(shouldShowText ? 360 : 0))
+                    .onAppear {
+                        randomNum = viewModel.currentDie.defaultValue
+                    }
                     .onTapGesture {
                         randomNum = viewModel.rng()
                         

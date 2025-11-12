@@ -14,7 +14,7 @@ struct RNGine_Watch_AppApp: App {
         WindowGroup {
             TabView {
                 WatchHomeView()
-                SettingsView()
+                WatchDiceSelectionView()
             }
         }
         .environmentObject(viewModel)

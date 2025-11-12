@@ -19,6 +19,27 @@ enum Die: String, CaseIterable {
     case d20
     case d100
     
+    var defaultValue: String {
+        switch self {
+        case .coin:
+            "Heads"
+        case .d4:
+            "4"
+        case .d6:
+            "6"
+        case .d8:
+            "8"
+        case .d10:
+            "10"
+        case .d12:
+            "12"
+        case .d20:
+            "20"
+        case .d100:
+            "100"
+        }
+    }
+    
     var image: String {
         switch self {
         case .coin:

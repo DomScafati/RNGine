@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F251C3B62EC50204003FDA7F /* RollHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251C3B52EC50204003FDA7F /* RollHistory.swift */; };
 		F25670F92E81B62A009E6A9B /* ModelPaints in Frameworks */ = {isa = PBXBuildFile; productRef = F25670F82E81B62A009E6A9B /* ModelPaints */; };
 		F272A5CA2EAFEEDF000BB766 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A5C92EAFEEDF000BB766 /* Die.swift */; };
 		F272A5CB2EAFEEDF000BB766 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272A5C92EAFEEDF000BB766 /* Die.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F251C3B52EC50204003FDA7F /* RollHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollHistory.swift; sourceTree = "<group>"; };
 		F272A5C92EAFEEDF000BB766 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		F2821A822E96E29900784B93 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F2821A852E96E29900784B93 /* RNGineGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNGineGradientView.swift; sourceTree = "<group>"; };
@@ -187,9 +189,10 @@
 		F2821AA22E96E69700784B93 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F251C3B52EC50204003FDA7F /* RollHistory.swift */,
+				F272A5C92EAFEEDF000BB766 /* Die.swift */,
 				F2F096422E96EB73008E2AD6 /* Assets.xcassets */,
 				F2821A822E96E29900784B93 /* HomeViewModel.swift */,
-				F272A5C92EAFEEDF000BB766 /* Die.swift */,
 				F2821A852E96E29900784B93 /* RNGineGradientView.swift */,
 			);
 			path = Shared;
@@ -478,6 +481,7 @@
 			files = (
 				F272A5CB2EAFEEDF000BB766 /* Die.swift in Sources */,
 				F2821A8C2E96E29900784B93 /* HomeViewModel.swift in Sources */,
+				F251C3B62EC50204003FDA7F /* RollHistory.swift in Sources */,
 				F2821A8E2E96E29900784B93 /* RNGineGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
