@@ -91,6 +91,8 @@ struct PrimaryDieView: View {
                     
                     randomNum = viewModel.rng()
                     isTapReady.toggle()
+                    
+                    viewModel.addRollHistory(randomNum)
                 }
             }
         }

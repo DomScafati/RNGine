@@ -9,7 +9,29 @@ import Foundation
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
-    @Published var currentDie: Die = .coin
+    @Published var currentDie: Die
+    private let rollHistory: RollHistoryProtocol
+    
+    init(
+        currentDie: Die = .coin,
+        rollHistory: RollHistoryProtocol = RollHistory()
+    ) {
+        self.currentDie = currentDie
+        self.rollHistory = rollHistory
+    }
+    
+    func addRollHistory(_ roll: String)  {
+        guard let roll = Int(roll) else { return }
+        
+        let rollRecord = RollRecord(
+            value: roll,
+            date: Date()
+        )
+        
+        Task {
+            await self.rollHistory.add(rollRecord, at: self.currentDie)
+        }
+    }
     
     func rng() -> String {
         let rangeLower: Int = 1

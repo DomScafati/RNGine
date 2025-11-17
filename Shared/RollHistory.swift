@@ -13,21 +13,15 @@ struct RollRecord: Identifiable {
     let date: Date
 }
 
-actor RollHistory {
+actor RollHistory: RollHistoryProtocol {
     private var store = [Die:[RollRecord]]()
     
-    func add(at die: Die, value: RollRecord) {
-        self.store[die]?.append(value)
+    func add(_ record: RollRecord, at die: Die) {
+        self.store[die]?.append(record)
     }
     
-    func get(at die: Die) -> [RollRecord]{
-        var array = [RollRecord]()
-        guard let key = self.store[die] else { return [] }
-        for value in key {
-            array.append(value)
-        }
-        
-        return array
+    func get(for die: Die) -> [RollRecord]{
+        return self.store[die] ?? []
     }
     
     func clear() {
@@ -37,4 +31,14 @@ actor RollHistory {
     func clear(at die: Die) {
         self.store.removeValue(forKey: die)
     }
+    
+    init(store: [Die : [RollRecord]] = [:]) {
+        self.store = store
+    }
+}
+
+protocol RollHistoryProtocol {
+    func add(_ record: RollRecord, at die: Die) async
+    func get(for die: Die) async -> [RollRecord]
+
 }

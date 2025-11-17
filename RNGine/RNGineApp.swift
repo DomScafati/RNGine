@@ -12,8 +12,13 @@ struct RNGineApp: App {
     @StateObject var homeViewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
-            iOSHomeView()
-                .environmentObject(homeViewModel)
+            TabView {
+                iOSHomeView()
+                    .environmentObject(homeViewModel)
+                
+                RollHistoryView()
+            }
+            
         }
     }
 }
