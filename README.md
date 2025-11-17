@@ -23,15 +23,15 @@ On iPhone, you can choose what to roll and see history.
   - [x] Implement coin flip function.
   - [x] Display heads/tails with icon or text.
 
-- [ ] **Apple Watch App**
-  - [ ] Create minimal Watch app target.
-  - [ ] Default to d20 or coin flip.
-  - [ ] Add simple tap-to-roll interface.
+- [x] **Apple Watch App**
+  - [x] Create minimal Watch app target.
+  - [x] Default to d20 or coin flip.
+  - [x] Add simple tap-to-roll interface.
 
 ---
 
 ### Phase 2: Enhancements
-- [ ] **Custom Dice Selection**
+- [x] **Custom Dice Selection**
   - [x] On iPhone: choose d4, d6, d8, d10, d12, d20, d100.
   - [ ] Save last selection for quick access.
 
@@ -40,7 +40,7 @@ On iPhone, you can choose what to roll and see history.
   - [ ] Option to clear history.
 
 - [ ] **Visual Polish**
-  - [ ] Add custom dice/coin graphics.
+  - [x] Add custom dice/coin graphics.
   - [ ] Add haptics and/or animations to Watch app.
 
 ---
