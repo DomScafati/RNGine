@@ -17,7 +17,8 @@ actor RollHistory: RollHistoryProtocol {
     private var store = [Die:[RollRecord]]()
     
     func add(_ record: RollRecord, at die: Die) {
-        self.store[die]?.append(record)
+        self.store[die, default: []].append(record)
+        print(store)
     }
     
     func get(for die: Die) -> [RollRecord]{

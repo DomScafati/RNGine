@@ -20,16 +20,36 @@ class HomeViewModel: ObservableObject {
         self.rollHistory = rollHistory
     }
     
+    
+    
+    /// A function that adds the user's most recent roll to a store of all rolls. It converts the string value into an Int. In the case of a coin, 0 = heads, 1 = tails.
+    /// -roll: the string value of the roll
     func addRollHistory(_ roll: String)  {
-        guard let roll = Int(roll) else { return }
+        var finalValue: Int
+        
+        if currentDie == .coin {
+            if roll.lowercased() == "heads" {
+                finalValue = 0
+            } else {
+                finalValue = 1
+            }
+        } else {
+            guard let roll = Int(roll) else { return }
+            finalValue = roll
+        }
         
         let rollRecord = RollRecord(
-            value: roll,
+            value: finalValue,
             date: Date()
         )
         
         Task {
-            await self.rollHistory.add(rollRecord, at: self.currentDie)
+            await self.rollHistory.add(
+                rollRecord,
+                at: self.currentDie
+            )
+            
+            print(rollHistory)
         }
     }
     

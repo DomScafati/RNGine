@@ -11,12 +11,6 @@ import ModelPaints
 struct iOSHomeView: View {
     @EnvironmentObject var viewModel: HomeViewModel
     @State var randomNum: String = ""
-    @State var isSheetPresented = false
-    
-    let columns = [
-        GridItem(.flexible(), spacing: 10),
-        GridItem(.flexible(), spacing: 10)
-    ]
     
     var body: some View {
         ZStack {
@@ -31,21 +25,6 @@ struct iOSHomeView: View {
                 
             }
             .padding()
-            .adaptiveSheet(isPresented: $isSheetPresented) {
-                LazyVGrid(columns: columns, spacing: 50) {
-                    ForEach(Die.allCases, id: \.self) { die in
-                        DiceSelectionView(
-                            die: die,
-                            isSelected: viewModel.currentDie == die
-                        )
-                        .onTapGesture {
-                            viewModel.currentDie = die
-                            randomNum = ""
-                        }
-                    }
-                }
-                .padding(.top, 50)
-            }
         }
     } // ZStack
 }
@@ -72,6 +51,9 @@ struct PrimaryDieView: View {
                     .transition(.scale)
                     .animation(.easeInOut, value: shouldShowText)
             }
+        }
+        .onAppear {
+            randomNum = viewModel.currentDie.defaultValue
         }
         .onTapGesture {
             if isTapReady {
@@ -101,30 +83,39 @@ struct PrimaryDieView: View {
 
 
 struct DiceSelectionView: View {
-    let die: Die
-    let isSelected: Bool
+    @EnvironmentObject var viewModel: HomeViewModel
+    let columns = [
+        GridItem(.flexible(), spacing: 10),
+        GridItem(.flexible(), spacing: 10)
+    ]
+    
     var body: some View {
-        ZStack {
-            Image(die.image)
-                .resizable()
-                .frame(width: 100, height: 100)
-                .overlay {
+        LazyVGrid(columns: columns, spacing: 50) {
+            ForEach(Die.allCases, id: \.self) { die in
+                ZStack {
                     Image(die.image)
                         .resizable()
                         .frame(width: 100, height: 100)
-                        .shadow(color: Color.bugmansGlow, radius: isSelected ? 20 : 0)
+                        .overlay {
+                            Image(die.image)
+                                .resizable()
+                                .frame(width: 100, height: 100)
+                                .shadow(color: Color.bugmansGlow, radius: viewModel.currentDie == die ? 20 : 0)
+                        }
+                    
+                    Text(
+                        "\(die.rawValue)"
+                    )
+                    .strokeOutline(width: 2.0, color: Color.abaddonBlack)
+                    .foregroundStyle(Color.coraxWhite)
+                    .padding(.top, 10)
                 }
-            
-            Text(
-                "\(die.rawValue)"
-            )
-            .strokeOutline(width: 2.0, color: Color.abaddonBlack)
-            .foregroundStyle(Color.coraxWhite)
-            .padding(.top, 10)
-            
-            
-            
+                .onTapGesture {
+                    viewModel.currentDie = die
+                }
+            }
         }
+        .padding(.top, 50)
     }
 }
 

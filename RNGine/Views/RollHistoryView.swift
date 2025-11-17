@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 
 struct RollHistoryView: View {
-    let data: [RollRecord]
+    let data: [RollRecord] = []
     var body: some View {
         VStack {
             Text("History")
@@ -35,5 +35,5 @@ struct RollHistoryView: View {
         RollRecord(value: 20, date: Date())
     ]
     
-    RollHistoryView(data: data)
+    RollHistoryView()
 }

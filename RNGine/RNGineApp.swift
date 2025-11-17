@@ -13,11 +13,20 @@ struct RNGineApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                iOSHomeView()
-                    .environmentObject(homeViewModel)
+                Tab("Home", systemImage: "house") {
+                    iOSHomeView()
+                }
                 
-                RollHistoryView()
+                Tab("Select", systemImage: "dice") {
+                    DieSelectionView()
+                }
+                
+                Tab("History", systemImage: "scroll") {
+                    RollHistoryView()
+                }
             }
+            .environmentObject(homeViewModel)
+            
             
         }
     }
